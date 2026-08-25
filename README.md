@@ -27,17 +27,33 @@ checked against.
 
 ## State of it
 
-Honest version: **this book is behind the engine and has known defects.**
-It was built before Raven Reader had a vocabulary trainer or
-translations, so it has neither. The extraction and the book contract
-found four content problems that are live in the shipped build:
+Honest version: **this book is behind the engine.** It was built before
+the engine had a vocabulary trainer or translations, so it has neither.
+`book/book.json` now passes the book contract; it did not at first, and
+what happened in between is worth writing down, because three of the four
+things the contract reported were not this book's fault.
 
-| problem | where |
-| --- | --- |
-| `linking fancy unto fancy` is glossed but appears nowhere in the text | `units[8].gloss[2]` |
-| `bosom` is glossed but appears nowhere in the text | `units[8].gloss[7]` |
-| `demon` is glossed but appears nowhere in the text | `units[11].gloss[3]` |
-| `still` is glossed twice, with two different meanings | `units[4].gloss` |
+**Two were an engine bug.** `bosom` and `demon` were reported as glossed
+words that appear nowhere in the poem. They appear in it twice over — as
+"my bosom's core" and "a demon's that is dreaming". The engine's
+word-boundary rule treated an apostrophe as part of the word, so `bosom`
+did not occur inside `bosom's`, and any glossed noun used possessively
+would have been rejected in any book. Fixed in the engine, with the poem's
+own lines as the test.
+
+**One was a rule that was too strict.** `still` is glossed twice — "to
+still the beating of my heart" is a verb, "let my heart be still a
+moment" is an adjective, four stanzas apart, and both glosses are right.
+The contract called that a defect. It is now a warning: the reading shows
+both, each in the line that settles which is meant, and the trainer skips
+the word, because out of its line "what does _still_ mean?" has two right
+answers.
+
+**One was real, and is fixed here.** `linking fancy unto fancy` was
+glossed as a phrase the poem breaks across a line — "I betook myself to
+linking / Fancy unto fancy" — so it matched nothing and the trainer could
+never have found it. The key is now `Fancy unto fancy`, which sits on one
+line and carries the same sense.
 
 There is also a structural oddity worth knowing about: the build declares
 four units in its array and then adds the other eight with
@@ -45,13 +61,16 @@ four units in its array and then adds the other eight with
 array gets a third of the poem and no warning. The engine's extractor
 handles this now — it did not, until this book was pointed at it.
 
+The single-file build in `build/` is untouched and still carries the
+`linking fancy unto fancy` gloss. It is kept as the record of what
+shipped, not as something to fix.
+
 ## What it needs to become current
 
-1. Fix the four glossary defects above, in `book/book.json`.
-2. Pull the inlined art and audio out of the 6 MB build into files, and
+1. Pull the inlined art and audio out of the 6 MB build into files, and
    generate a WebVTT cue file so the words light up as they are spoken.
-3. Add the vocabulary swaps and the translations the engine now supports.
-4. Ship as a pack the engine loads, rather than as a single-file build.
+2. Add the vocabulary swaps and the translations the engine now supports.
+3. Ship as a pack the engine loads, rather than as a single-file build.
 
 ## Licence
 
