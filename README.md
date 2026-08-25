@@ -1,4 +1,4 @@
-# The Raven — Edgar Allan Poe — Raven Reader
+# The Raven — Edgar Allan Poe — Magi Reader
 
 Poe's 1845 poem as an illustrated, narrated reading for language
 classrooms. Eighteen stanzas across twelve segments, with a picture and a
@@ -6,10 +6,8 @@ recording for each, comprehension questions, and a glossary of the words
 that stop a learner.
 
 **This is a book, not the engine.** The engine is
-[Raven Reader](https://github.com/dancockrell/raven-reader) — which is
-named after this poem, which is a confusion worth naming once and then
-avoiding. Throughout this repository, _The Raven_ means the poem and
-Raven Reader means the software.
+[Magi Reader](https://github.com/dancockrell/magi-reader-engine), named
+after _The Gift of the Magi_, which is the other book it reads.
 
 ## What is here
 
