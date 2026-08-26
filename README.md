@@ -12,16 +12,34 @@ after _The Gift of the Magi_, which is the other book it reads.
 ## What is here
 
 ```
-book/book.json        the book as data: text, glossary, questions,
-                      characters, pictures — no code in it
+book/book.json        the extractor's output: text, glossary, questions,
+                      characters — and the art still as data URIs, because
+                      that is what the build contained
 build/the-raven.html  the single-file reader, as shipped on itch.io.
                       6 MB, art and audio inlined as data URIs.
+pack/                 the book as the engine loads it
+  index.js            the pack entry: where the art and audio sit
+  book.json           the same book with the data URIs taken out
+  art/                139 WebP files, generated, not committed
+  AUDIO-NEEDED.md     the 178 recordings this book does not have
+tools/fix-glossary.mjs   content corrections, run after extraction
+tools/extract-media.mjs  the art, out of the build and into pack/art/
 ```
 
 `book/book.json` was lifted out of `build/the-raven.html` by the
-engine's extractor, and is the form the current engine reads. The build
-is kept because it is what actually shipped and what the extraction is
-checked against.
+engine's extractor, and is left exactly as produced. The build is kept
+because it is what actually shipped and what the extraction is checked
+against. Neither is ever hand-edited: corrections go in
+`tools/fix-glossary.mjs`, and the pack is generated.
+
+```
+node <engine>/tools/extract-book.mjs build/the-raven.html book/book.json raven
+node tools/fix-glossary.mjs
+node tools/extract-media.mjs
+```
+
+The art paths live in `pack/index.js` rather than in `book.json`, and
+the comment at the top of that file says why.
 
 ## State of it
 
@@ -65,10 +83,19 @@ shipped, not as something to fix.
 
 ## What it needs to become current
 
-1. Pull the inlined art and audio out of the 6 MB build into files, and
-   generate a WebVTT cue file so the words light up as they are spoken.
-2. Add the vocabulary swaps and the translations the engine now supports.
-3. Ship as a pack the engine loads, rather than as a single-file build.
+1. ~~Pull the inlined art out of the 6 MB build into files.~~ Done: 139
+   WebP files in `pack/art/`, named by the key the build used.
+2. ~~Ship as a pack the engine loads.~~ Done: `pack/`.
+3. **The recordings.** There are none. The build loaded them from a
+   `raven-audio/` folder that is not in this repository, and without them
+   there are no timings, so there is no word-by-word highlighting. Nothing
+   here is estimated: `pack/AUDIO-NEEDED.md` names the 178 clips and the
+   one cue file that would have to exist, and where to look for the
+   folder first. The reading works without them, silently.
+4. Add the vocabulary swaps and the translations the engine now supports.
+5. Decide what to do with the 120 per-line plates. The build changed the
+   picture on every line; the engine gives every line of a segment the
+   same one. The files are extracted and waiting.
 
 ## Licence
 
