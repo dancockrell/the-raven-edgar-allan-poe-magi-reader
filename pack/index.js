@@ -78,12 +78,25 @@ export default {
   plates,
   cast,
   media: {
-    audio: 'raven-audio/',
-    /* Named, not written. There are no recordings for this book and so
-       no cues; see AUDIO-NEEDED.md, which says exactly what would have
-       to exist. The engine treats a cue file that does not load as "no
-       highlighting" and still shows every line, so this is a promise
-       about where the file goes, not a claim that it is there. */
+    /* Real, and in this repository.
+     *
+     * This said "there are no recordings for this book" and pointed at
+     * an AUDIO-NEEDED.md that counted what would have to be made. Both
+     * were wrong. The recordings survived in four `raven-itch-folder`
+     * zips, and `raven-audio/timings.js` with them: 368 clips and 5,047
+     * word timings from the original build, converted to one WebVTT by
+     * the engine's `timings-to-vtt.mjs` with zero round-trip failures.
+     *
+     * The reader asks for 178 of those clips. None is missing and none
+     * lacks a cue, so this book has narration and word-by-word
+     * highlighting on the same terms as Magi, with nothing regenerated
+     * and no timing estimated.
+     *
+     * Committed rather than gitignored, unlike the art. The art is
+     * regenerable from the build in this repository; these recordings
+     * existed in four loose zips and nowhere else on the machine, and a
+     * cleanup pass came close to deleting them. */
+    audio: 'audio/',
     cues: 'cues/raven.vtt',
   },
 };
