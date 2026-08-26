@@ -500,7 +500,7 @@
     ],
     [
      "sainted",
-     "holy, made a saint"
+     "holy and blessed, now among the angels"
     ],
     [
      "fiend",
@@ -581,12 +581,12 @@
     {
      "q": "Why is the speaker awake so late?",
      "opts": [
-      "He is waiting for a visitor he invited.",
-      "He is reading old books because he is sad and tired.",
-      "He is writing a poem about a bird.",
-      "He is guarding the house."
+      "He is waiting for a visitor who promised to come tonight.",
+      "He is guarding the house against a coming storm.",
+      "He is writing a poem about a bird he once saw.",
+      "He is reading old books because he is sad and tired."
      ],
-     "correct": 1,
+     "correct": 3,
      "fb": "He is 'weak and weary', reading 'forgotten lore'. Reading is how he escapes his sadness."
     },
     {
@@ -595,7 +595,7 @@
       "The window",
       "The fireplace",
       "The chamber door",
-      "Under the floor"
+      "Somewhere under the floor"
      ],
      "correct": 2,
      "fb": "'Rapping at my chamber door.' Remember this — the sound moves later, and that movement matters."
@@ -653,12 +653,12 @@
     {
      "q": "What has happened to Lenore?",
      "opts": [
-      "She left him for someone else.",
       "She has died.",
+      "She left him for someone else.",
       "She is asleep upstairs.",
       "She is travelling."
      ],
-     "correct": 1,
+     "correct": 0,
      "fb": "'The lost Lenore… whom the angels name Lenore.' The angels can say her name; he cannot."
     },
     {
@@ -738,12 +738,12 @@
     {
      "q": "What makes the frightening sound in this stanza?",
      "opts": [
-      "The raven's wings",
       "The purple curtains rustling",
-      "A voice outside",
-      "The fire"
+      "The raven's wings beating",
+      "A voice from outside the door",
+      "The fire dying in the grate"
      ],
-     "correct": 1,
+     "correct": 0,
      "fb": "'The silken, sad, uncertain rustling of each purple curtain.' Nothing dangerous — but at midnight, in grief, it is enough."
     }
    ],
@@ -804,11 +804,11 @@
      "q": "What does he find when he opens the door?",
      "opts": [
       "A stranger in a black coat",
-      "The raven",
       "Darkness and nothing else",
+      "The raven",
       "A letter on the step"
      ],
-     "correct": 2,
+     "correct": 1,
      "fb": "'Darkness there and nothing more.' The poem keeps giving him nothing where he hoped for something."
     },
     {
@@ -817,7 +817,7 @@
       "A woman's voice",
       "The raven",
       "An echo of his own voice",
-      "A knock at the window"
+      "A knock at the window again"
      ],
      "correct": 2,
      "fb": "'An echo murmured back the word, \"Lenore!\"' Even his hope comes back to him empty."
@@ -880,10 +880,10 @@
      "opts": [
       "Quieter and further away",
       "It stopped completely",
-      "Louder, and now at the window",
-      "It became a voice"
+      "It became a voice",
+      "Louder, and now at the window"
      ],
-     "correct": 2,
+     "correct": 3,
      "fb": "Louder, and it has moved from door to window. Poe tightens the screw one turn at a time."
     },
     {
@@ -955,23 +955,23 @@
     {
      "q": "Where does the raven sit?",
      "opts": [
-      "On the window sill",
-      "On a statue of the goddess of wisdom",
-      "On the fireplace",
-      "On the speaker's shoulder"
+      "On the window sill above the door",
+      "On the back of the speaker's own chair",
+      "On the mantel above the fireplace",
+      "On a statue of the goddess of wisdom"
      ],
-     "correct": 1,
+     "correct": 3,
      "fb": "On the bust of Pallas Athena, above the door. Sitting on wisdom makes its one word sound like truth."
     },
     {
      "q": "How does the raven behave when it enters?",
      "opts": [
-      "Nervous and quick, like a trapped animal",
-      "Proud and calm, like a lord entering his own house",
-      "Friendly, landing on his hand",
-      "Frightened, hiding in a corner"
+      "Nervous and quick, like an animal caught inside a trap",
+      "Frightened, hiding in the darkest corner",
+      "Friendly, landing gently on his open hand",
+      "Proud and calm, like a lord entering his own house"
      ],
-     "correct": 1,
+     "correct": 3,
      "fb": "'Not the least obeisance made he… with mien of lord or lady.' It does not bow. It owns the room."
     }
    ],
@@ -1036,7 +1036,7 @@
      "opts": [
       "Terror — he runs away",
       "Amusement — it makes him smile",
-      "Anger — he throws something",
+      "Anger — he throws something at it",
       "He faints"
      ],
      "correct": 1,
@@ -1046,11 +1046,11 @@
      "q": "What single word does the raven say?",
      "opts": [
       "\"Lenore\"",
-      "\"Forever\"",
       "\"Nevermore\"",
+      "\"Forevermore\"",
       "\"Goodbye\""
      ],
-     "correct": 2,
+     "correct": 1,
      "fb": "'Quoth the Raven \"Nevermore.\"' One word — and it will answer every question from here on."
     }
    ],
@@ -1113,23 +1113,23 @@
     {
      "q": "What logical explanation does he give for the bird's word?",
      "opts": [
-      "It is a message from Lenore.",
-      "It learned the word from an unlucky previous owner.",
-      "It is a demon in disguise.",
-      "It is copying something he said."
+      "It is a message sent to him from Lenore herself.",
+      "It is copying something he said earlier tonight.",
+      "It is a demon that has taken on the shape of a bird.",
+      "It learned the word from an unlucky former owner."
      ],
-     "correct": 1,
+     "correct": 3,
      "fb": "'Caught from some unhappy master.' This is his last fully rational moment in the poem."
     },
     {
      "q": "What does he say will happen tomorrow?",
      "opts": [
+      "Lenore will come back to him at last.",
+      "He will burn the old books and forget it all.",
       "The bird will leave him, like everything else.",
-      "He will burn the books.",
-      "Lenore will return.",
-      "He will move house."
+      "He will leave the house and not come back at all."
      ],
-     "correct": 0,
+     "correct": 2,
      "fb": "'On the morrow he will leave me, as my Hopes have flown before.' Loss is the pattern of his whole life."
     }
    ],
@@ -1190,23 +1190,23 @@
     {
      "q": "What painful thought comes to him as he rests on the velvet cushion?",
      "opts": [
-      "The raven will attack him.",
+      "The raven will attack him in the night.",
+      "He has already forgotten her face.",
       "Lenore will never rest her head there again.",
-      "He has forgotten her face.",
-      "Morning will never come."
+      "Dawn is still a great many hours away."
      ],
-     "correct": 1,
+     "correct": 2,
      "fb": "An ordinary cushion suddenly becomes unbearable. That is how grief ambushes people."
     },
     {
      "q": "What is he doing while he sits in front of the bird?",
      "opts": [
-      "Shouting at it",
-      "Silently guessing what it means",
-      "Writing a letter",
-      "Falling asleep"
+      "Shouting angrily at it",
+      "Falling asleep in his reading chair",
+      "Writing a letter to Lenore",
+      "Silently guessing what it means"
      ],
-     "correct": 1,
+     "correct": 3,
      "fb": "'This I sat engaged in guessing, but no syllable expressing.' He says nothing out loud — it is all happening inside."
     }
    ],
@@ -1271,10 +1271,10 @@
     {
      "q": "How does his attitude toward the raven change here?",
      "opts": [
-      "He stops caring about it.",
+      "He stops caring about it at all and ignores it completely.",
       "He begins treating it as a prophet who knows the truth.",
-      "He decides it is a friendly pet.",
-      "He realises it is a person in a costume."
+      "He decides it is a friendly pet he might keep.",
+      "He realises it must be a person in a costume."
      ],
      "correct": 1,
      "fb": "Calling it 'Prophet!' is the key change. He has started believing the answers."
@@ -1282,12 +1282,12 @@
     {
      "q": "What does he beg the raven to tell him?",
      "opts": [
+      "What the time is on the clock",
+      "Where the bird first came from",
       "Whether there is any comfort for his pain",
-      "Where the bird came from",
-      "What time it is",
-      "Whether the storm will end"
+      "Whether the storm outside will end"
      ],
-     "correct": 0,
+     "correct": 2,
      "fb": "'Is there — is there balm in Gilead?' He is asking whether anything can heal him. The answer is no."
     }
    ],
@@ -1350,23 +1350,23 @@
     {
      "q": "What is his final, most important question?",
      "opts": [
-      "Whether the storm will end",
       "Whether he will meet Lenore again in heaven",
+      "Whether the storm will end by morning",
       "Whether the bird has a real name",
-      "Whether God is listening"
+      "Whether God is listening to him at all"
      ],
-     "correct": 1,
+     "correct": 0,
      "fb": "'Shall clasp a sainted maiden whom the angels name Lenore.' Not just her return — ever seeing her again at all."
     },
     {
      "q": "What does he order the raven to do?",
      "opts": [
-      "Sing him a song",
-      "Go back into the storm and leave him",
-      "Stay with him forever",
-      "Find Lenore"
+      "Sing him a song about Lenore",
+      "Find Lenore and bring her back",
+      "Stay with him in the room for ever after",
+      "Go back into the storm and leave him"
      ],
-     "correct": 1,
+     "correct": 3,
      "fb": "'Get thee back into the tempest!' He screams at it to go — and of course it answers 'Nevermore'."
     }
    ],
@@ -1427,23 +1427,23 @@
     {
      "q": "Why does the poem switch to the present tense at the end?",
      "opts": [
-      "Poe made a mistake.",
-      "To show the raven flew away.",
+      "Poe made a mistake while writing it.",
       "To show the suffering is still happening now.",
-      "To show a long time has passed."
+      "To show the raven finally flew away.",
+      "To show that a long time has passed since then."
      ],
-     "correct": 2,
+     "correct": 1,
      "fb": "Everything before is past tense. The switch traps the reader in the moment with him — permanently."
     },
     {
      "q": "What is the very last image of the poem?",
      "opts": [
-      "The raven flying into the storm",
-      "Morning light through the window",
       "His soul trapped in the bird's shadow on the floor",
-      "Lenore appearing at the door"
+      "Morning light coming through the open window",
+      "The raven flying away back into the storm",
+      "Lenore appearing suddenly in the doorway"
      ],
-     "correct": 2,
+     "correct": 0,
      "fb": "'My soul from out that shadow… shall be lifted — nevermore!' The poem ends inside the shadow, not outside it."
     }
    ],
@@ -1510,23 +1510,23 @@
     {
      "q": "Poe was paid roughly nine dollars for \"The Raven.\" What does that tell us?",
      "opts": [
-      "Poets were paid extremely well then.",
-      "Fame and money were separate — he became famous without becoming rich.",
-      "He refused payment.",
-      "Newspapers never paid writers."
+      "Fame and money were separate: he got famous, not rich.",
+      "Poets were paid extremely well in those days.",
+      "He refused all payment for the poem on principle.",
+      "Newspapers rarely paid their writers anything."
      ],
-     "correct": 1,
+     "correct": 0,
      "fb": "Copyright protection was weak and poems were reprinted everywhere without payment. He died poor four years later."
     },
     {
      "q": "Which modern kind of story did Poe invent?",
      "opts": [
-      "The detective story",
-      "The romance novel",
       "The travel diary",
+      "The romantic adventure novel",
+      "The detective story",
       "The cookbook"
      ],
-     "correct": 0,
+     "correct": 2,
      "fb": "'The Murders in the Rue Morgue' (1841) created the pattern Sherlock Holmes and every detective since has followed."
     }
    ],
@@ -1594,21 +1594,21 @@
     {
      "q": "Why are the Baltimore Ravens a good example of the poem's reach?",
      "opts": [
-      "Poe was a famous athlete.",
-      "Ravens are Maryland's official bird.",
-      "A major sports team was named after a poem by public vote, 150 years later.",
-      "Poe's family founded the team."
+      "Poe was a famous athlete in Baltimore before he wrote.",
+      "A team was named after the poem by public vote, 150 years on.",
+      "Ravens are the official state bird of Maryland today.",
+      "Poe's own family founded the team generations ago."
      ],
-     "correct": 2,
+     "correct": 1,
      "fb": "Fans voted for it in 1996 because Poe died and is buried in Baltimore. A poem shaping a sports brand is real cultural reach."
     },
     {
      "q": "Why did the poem spread so fast and so far?",
      "opts": [
       "It was easy to remember, easy to perform and easy to copy.",
-      "It was required reading in every school.",
-      "It was the only poem printed that year.",
-      "It was translated into Korean first."
+      "It was required reading in every school in America.",
+      "It was the only poem printed anywhere that year.",
+      "It was translated into Korean before English."
      ],
      "correct": 0,
      "fb": "Strong beat, one repeated word, and a shape any parodist can borrow. That combination travels."
