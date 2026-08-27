@@ -55,6 +55,134 @@ const plates = {
   impact: 'art/plate-impact.webp',
 };
 
+/** Per-line plates. Extracted alongside the unit plates above but never
+ *  wired up until now — the engine could not look past one picture per
+ *  unit. `beatsOf` in `src/lib/reader/beats.js` checks `<sceneId>-<i>`
+ *  before falling back to the unit-level plate, so this is additive:
+ *  nothing here changes which key a unit falls back to. */
+const beatPlates = {
+  'impact-0': 'art/beat-impact-0.webp',
+  'impact-1': 'art/beat-impact-1.webp',
+  'impact-2': 'art/beat-impact-2.webp',
+  'impact-3': 'art/beat-impact-3.webp',
+  'impact-4': 'art/beat-impact-4.webp',
+  'impact-5': 'art/beat-impact-5.webp',
+  'impact-6': 'art/beat-impact-6.webp',
+  'impact-7': 'art/beat-impact-7.webp',
+  'poe-0': 'art/beat-poe-0.webp',
+  'poe-1': 'art/beat-poe-1.webp',
+  'poe-2': 'art/beat-poe-2.webp',
+  'poe-3': 'art/beat-poe-3.webp',
+  'poe-4': 'art/beat-poe-4.webp',
+  'poe-5': 'art/beat-poe-5.webp',
+  'poe-6': 'art/beat-poe-6.webp',
+  'poe-7': 'art/beat-poe-7.webp',
+  'poe-8': 'art/beat-poe-8.webp',
+  'poe-9': 'art/beat-poe-9.webp',
+  's1-0': 'art/beat-s1-0.webp',
+  's1-1': 'art/beat-s1-1.webp',
+  's1-2': 'art/beat-s1-2.webp',
+  's1-3': 'art/beat-s1-3.webp',
+  's1-4': 'art/beat-s1-4.webp',
+  's1-5': 'art/beat-s1-5.webp',
+  's10-0': 'art/beat-s10-0.webp',
+  's10-1': 'art/beat-s10-1.webp',
+  's10-2': 'art/beat-s10-2.webp',
+  's10-3': 'art/beat-s10-3.webp',
+  's10-4': 'art/beat-s10-4.webp',
+  's10-5': 'art/beat-s10-5.webp',
+  's10-6': 'art/beat-s10-6.webp',
+  's10-7': 'art/beat-s10-7.webp',
+  's10-8': 'art/beat-s10-8.webp',
+  's11-0': 'art/beat-s11-0.webp',
+  's11-1': 'art/beat-s11-1.webp',
+  's11-2': 'art/beat-s11-2.webp',
+  's11-3': 'art/beat-s11-3.webp',
+  's11-4': 'art/beat-s11-4.webp',
+  's11-5': 'art/beat-s11-5.webp',
+  's11-6': 'art/beat-s11-6.webp',
+  's11-7': 'art/beat-s11-7.webp',
+  's11-8': 'art/beat-s11-8.webp',
+  's11-9': 'art/beat-s11-9.webp',
+  's11-10': 'art/beat-s11-10.webp',
+  's11-11': 'art/beat-s11-11.webp',
+  's12-0': 'art/beat-s12-0.webp',
+  's12-1': 'art/beat-s12-1.webp',
+  's12-2': 'art/beat-s12-2.webp',
+  's12-3': 'art/beat-s12-3.webp',
+  's12-4': 'art/beat-s12-4.webp',
+  's12-5': 'art/beat-s12-5.webp',
+  's2-0': 'art/beat-s2-0.webp',
+  's2-1': 'art/beat-s2-1.webp',
+  's2-2': 'art/beat-s2-2.webp',
+  's2-3': 'art/beat-s2-3.webp',
+  's2-4': 'art/beat-s2-4.webp',
+  's2-5': 'art/beat-s2-5.webp',
+  's3-0': 'art/beat-s3-0.webp',
+  's3-1': 'art/beat-s3-1.webp',
+  's3-2': 'art/beat-s3-2.webp',
+  's3-3': 'art/beat-s3-3.webp',
+  's3-4': 'art/beat-s3-4.webp',
+  's3-5': 'art/beat-s3-5.webp',
+  's4-0': 'art/beat-s4-0.webp',
+  's4-1': 'art/beat-s4-1.webp',
+  's4-2': 'art/beat-s4-2.webp',
+  's4-3': 'art/beat-s4-3.webp',
+  's4-4': 'art/beat-s4-4.webp',
+  's4-5': 'art/beat-s4-5.webp',
+  's4-6': 'art/beat-s4-6.webp',
+  's4-7': 'art/beat-s4-7.webp',
+  's4-8': 'art/beat-s4-8.webp',
+  's4-9': 'art/beat-s4-9.webp',
+  's4-10': 'art/beat-s4-10.webp',
+  's5-0': 'art/beat-s5-0.webp',
+  's5-1': 'art/beat-s5-1.webp',
+  's5-2': 'art/beat-s5-2.webp',
+  's5-3': 'art/beat-s5-3.webp',
+  's5-4': 'art/beat-s5-4.webp',
+  's5-5': 'art/beat-s5-5.webp',
+  's6-0': 'art/beat-s6-0.webp',
+  's6-1': 'art/beat-s6-1.webp',
+  's6-2': 'art/beat-s6-2.webp',
+  's6-3': 'art/beat-s6-3.webp',
+  's6-4': 'art/beat-s6-4.webp',
+  's6-5': 'art/beat-s6-5.webp',
+  's7-0': 'art/beat-s7-0.webp',
+  's7-1': 'art/beat-s7-1.webp',
+  's7-2': 'art/beat-s7-2.webp',
+  's7-3': 'art/beat-s7-3.webp',
+  's7-4': 'art/beat-s7-4.webp',
+  's7-5': 'art/beat-s7-5.webp',
+  's7-6': 'art/beat-s7-6.webp',
+  's7-7': 'art/beat-s7-7.webp',
+  's7-8': 'art/beat-s7-8.webp',
+  's7-9': 'art/beat-s7-9.webp',
+  's7-10': 'art/beat-s7-10.webp',
+  's8-0': 'art/beat-s8-0.webp',
+  's8-1': 'art/beat-s8-1.webp',
+  's8-2': 'art/beat-s8-2.webp',
+  's8-3': 'art/beat-s8-3.webp',
+  's8-4': 'art/beat-s8-4.webp',
+  's8-5': 'art/beat-s8-5.webp',
+  's8-6': 'art/beat-s8-6.webp',
+  's8-7': 'art/beat-s8-7.webp',
+  's8-8': 'art/beat-s8-8.webp',
+  's8-9': 'art/beat-s8-9.webp',
+  's8-10': 'art/beat-s8-10.webp',
+  's9-0': 'art/beat-s9-0.webp',
+  's9-1': 'art/beat-s9-1.webp',
+  's9-2': 'art/beat-s9-2.webp',
+  's9-3': 'art/beat-s9-3.webp',
+  's9-4': 'art/beat-s9-4.webp',
+  's9-5': 'art/beat-s9-5.webp',
+  's9-6': 'art/beat-s9-6.webp',
+  's9-7': 'art/beat-s9-7.webp',
+  's9-8': 'art/beat-s9-8.webp',
+  's9-9': 'art/beat-s9-9.webp',
+  's9-10': 'art/beat-s9-10.webp',
+  's9-11': 'art/beat-s9-11.webp',
+};
+
 /** The two portraits, put back on the cast members the extractor built.
  *  Speaker.jsx uses `member.art` as an <img src> directly. */
 const portraits = {
@@ -75,7 +203,7 @@ const cast = {
 /** @type {import('../../lib/types.js').Book} */
 export default {
   ...data,
-  plates,
+  plates: { ...plates, ...beatPlates },
   cast,
   media: {
     /* Real, and in this repository.
@@ -102,14 +230,14 @@ export default {
 };
 
 /**
- * The 120 per-line plates are extracted to `art/beat-<unit>-<i>.webp`
- * and are deliberately not mapped here.
+ * The 120 per-line plates, extracted to `art/beat-<unit>-<i>.webp`, are
+ * now mapped above as `beatPlates` and merged into `plates` at export.
+ * `beatsOf` in `src/lib/reader/beats.js` checks `<sceneId>-<i>` before
+ * falling back to the one-plate-per-unit key, so the picture now turns
+ * with every line, matching what the original build did.
  *
- * The build changed the picture on every line of a segment; the engine's
- * `beatsOf` gives every beat in a unit the one plate for that unit.
- * Wiring them up is an engine change, not a pack change, so the files
- * are kept and the map is left for whoever makes it. Two raven sprites
- * (`art/sprite-raven-sit.webp`, `art/sprite-raven-fly.webp`) are in the
- * same position: the build flew a bird across the cue layer, and the
- * engine has no cue layer.
+ * Two raven sprites (`art/sprite-raven-sit.webp`, `art/sprite-raven-
+ * fly.webp`) are still unwired: the build flew a bird across the cue
+ * layer, and the engine has no cue layer. That is a real animation
+ * feature, not a picture swap, and is a separate piece of work.
  */
