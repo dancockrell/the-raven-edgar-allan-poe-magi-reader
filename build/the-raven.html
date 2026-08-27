@@ -4691,7 +4691,7 @@ var TEXT_UNITS = [
 "And the silken, sad, uncertain rustling of each purple curtain\nThrilled me—filled me with fantastic terrors never felt before;\nSo that now, to still the beating of my heart, I stood repeating\n\"'Tis some visitor {entreating|begging, asking politely} entrance at my chamber door—\nSome late visitor entreating entrance at my chamber door;—\n            This it is and nothing more.\""
  ],
  para:"The soft, sad movement of the purple curtains frightens him in a way he has never felt before. To calm his heart, he says out loud, again and again, that it is just a late visitor at the door. He is trying to convince himself.",
- gloss:[["silken","soft and smooth like silk"],["rustling","a soft moving sound, like paper or cloth"],["thrilled","shook with strong feeling (here: fear, not joy)"],["fantastic","strange, like something imagined"],["still","to make calm or stop"],["entreating","begging, asking politely"]],
+ gloss:[["silken","soft and smooth like silk"],["rustling","a soft moving sound, like paper or cloth"],["thrilled","shook with strong feeling (here: fear, not joy)"],["fantastic","strange, like something imagined"],["still", "calm, quiet"],["entreating","begging, asking politely"]],
 },
 {
  id:"s4", scene:"s4", act:"Act II — The Answer", num:4,
@@ -4782,7 +4782,7 @@ TEXT_UNITS.push(
 "\"Be that word our sign of parting, bird or fiend!\" I shrieked, upstarting—\n\"Get thee back into the tempest and the Night's Plutonian shore!\nLeave no black plume as a token of that lie thy soul hath spoken!\nLeave my loneliness unbroken!—quit the bust above my door!\nTake thy beak from out my heart, and take thy form from off my door!\"\n            Quoth the Raven \"Nevermore.\""
  ],
  para:"He asks the real question at last: <b>will I ever hold Lenore again in heaven?</b> The raven says \"Nevermore.\" He jumps up screaming. He orders the bird to go back into the storm, to leave no feather behind, to take its beak out of his heart and get off his door. The raven answers once more: <b>\"Nevermore.\"</b>",
- gloss:[["laden","loaded, heavily filled"],["Aidenn","Eden, or paradise — heaven"],["clasp","to hold tightly"],["sainted","holy, made a saint"],["fiend","a devil, an evil spirit"],["shrieked","screamed"],["upstarting","jumping up suddenly"],["tempest","a violent storm"],["plume","a large feather"],["quit","to leave"]],
+ gloss:[["laden","loaded, heavily filled"],["Aidenn","Eden, or paradise — heaven"],["clasp","to hold tightly"],["sainted", "holy and blessed, now among the angels"],["fiend","a devil, an evil spirit"],["shrieked","screamed"],["upstarting","jumping up suddenly"],["tempest","a violent storm"],["plume","a large feather"],["quit","to leave"]],
 },
 {
  id:"s12", scene:"s12", act:"Act V — The Shadow", num:12,
@@ -4866,355 +4866,1101 @@ impact: {
      sa{}       constructed response with tiered keyword matching
    ============================================================ */
 var TEACHING = {
-
-s1:{
-  watch:"Here we go. It is past midnight and he cannot sleep. Just watch.",
-  focus:"Watch how tired he is — and listen for the very first sound he hears.",
-  debrief:{ok:"Yes. He is not waiting for anyone, so that knock is a surprise.",
-            no:"Look again at 'weak and weary' and 'forgotten lore'. He is reading to escape, not waiting for a guest."},
-  writeIntro:"Mood means the feeling a piece of writing gives you. Name the feeling, then point at a word that makes it.",
-  mc:[
-   {q:"Why is the speaker awake so late?",
-    opts:["He is waiting for a visitor he invited.","He is reading old books because he is sad and tired.",
-          "He is writing a poem about a bird.","He is guarding the house."],
-    correct:1,
-    fb:"He is 'weak and weary', reading 'forgotten lore'. Reading is how he escapes his sadness."},
-   {q:"Where does the first sound come from?",
-    opts:["The window","The fireplace","The chamber door","Under the floor"],
-    correct:2,
-    fb:"'Rapping at my chamber door.' Remember this — the sound moves later, and that movement matters."}
+ "s1": {
+  "watch": "Here we go. It is past midnight and he cannot sleep. Just watch.",
+  "focus": "Watch how tired he is — and listen for the very first sound he hears.",
+  "debrief": {
+   "ok": "Yes. He is not waiting for anyone, so that knock is a surprise.",
+   "no": "Look again at 'weak and weary' and 'forgotten lore'. He is reading to escape, not waiting for a guest."
+  },
+  "writeIntro": "Mood means the feeling a piece of writing gives you. Name the feeling, then point at a word that makes it.",
+  "mc": [
+   {
+    "q": "Why is the speaker awake so late?",
+    "opts": [
+     "He is waiting for a visitor who promised to come tonight.",
+     "He is guarding the house against a coming storm.",
+     "He is writing a poem about a bird he once saw.",
+     "He is reading old books because he is sad and tired."
+    ],
+    "correct": 3,
+    "fb": "He is 'weak and weary', reading 'forgotten lore'. Reading is how he escapes his sadness."
+   },
+   {
+    "q": "Where does the first sound come from?",
+    "opts": [
+     "The window",
+     "The fireplace",
+     "The chamber door",
+     "Somewhere under the floor"
+    ],
+    "correct": 2,
+    "fb": "'Rapping at my chamber door.' Remember this — the sound moves later, and that movement matters."
+   }
   ],
-  sa:{q:"Describe the mood at the start of the poem in your own words. Then quote one word or phrase that creates it.",
-      hint:"Feelings first: tired? sad? uneasy? Then find your evidence — 'midnight', 'dreary', 'weak and weary'.",
-      minWords:12,
-      core:[["dreary","gloomy","bleak","dark"],["tired","weary","sleepy","exhausted"],["sad","sorrow","unhappy","depressed","melancholy"]],
-      support:["midnight","lonely","quiet","night","heavy","boring"],
-      phrases:["weak and weary","midnight dreary","forgotten lore"]}
-},
-
-s2:{
-  watch:"Now we learn why he is so sad. Listen for a name.",
-  focus:"A name is about to appear. Listen for who it belongs to — and what has happened to her.",
-  debrief:{ok:"Exactly. She is dead, and he cannot even say her name in this room.",
-            no:"'The angels name Lenore' and 'Nameless here for evermore' — only the angels can say her name now."},
-  writeIntro:"This one asks you to explain an image. Say what he literally sees first, then why the poet chose that word.",
-  mc:[
-   {q:"What has happened to Lenore?",
-    opts:["She left him for someone else.","She has died.","She is asleep upstairs.","She is travelling."],
-    correct:1,
-    fb:"'The lost Lenore… whom the angels name Lenore.' The angels can say her name; he cannot."},
-   {q:"What month is it?",
-    opts:["June","September","December","March"],
-    correct:2,
-    fb:"'The bleak December.' Cold, dark, and the end of the year — the setting matches his mood."}
+  "sa": {
+   "q": "Describe the mood at the start of the poem in your own words. Then quote one word or phrase that creates it.",
+   "hint": "Feelings first: tired? sad? uneasy? Then find your evidence — 'midnight', 'dreary', 'weak and weary'.",
+   "minWords": 12,
+   "core": [
+    [
+     "dreary",
+     "gloomy",
+     "bleak",
+     "dark"
+    ],
+    [
+     "tired",
+     "weary",
+     "sleepy",
+     "exhausted"
+    ],
+    [
+     "sad",
+     "sorrow",
+     "unhappy",
+     "depressed",
+     "melancholy"
+    ]
+   ],
+   "support": [
+    "midnight",
+    "lonely",
+    "quiet",
+    "night",
+    "heavy",
+    "boring"
+   ],
+   "phrases": [
+    "weak and weary",
+    "midnight dreary",
+    "forgotten lore"
+   ]
+  }
+ },
+ "s2": {
+  "watch": "Now we learn why he is so sad. Listen for a name.",
+  "focus": "A name is about to appear. Listen for who it belongs to — and what has happened to her.",
+  "debrief": {
+   "ok": "Exactly. She is dead, and he cannot even say her name in this room.",
+   "no": "'The angels name Lenore' and 'Nameless here for evermore' — only the angels can say her name now."
+  },
+  "writeIntro": "This one asks you to explain an image. Say what he literally sees first, then why the poet chose that word.",
+  "mc": [
+   {
+    "q": "What has happened to Lenore?",
+    "opts": [
+     "She has died.",
+     "She left him for someone else.",
+     "She is asleep upstairs.",
+     "She is travelling."
+    ],
+    "correct": 0,
+    "fb": "'The lost Lenore… whom the angels name Lenore.' The angels can say her name; he cannot."
+   },
+   {
+    "q": "What month is it?",
+    "opts": [
+     "June",
+     "September",
+     "December",
+     "March"
+    ],
+    "correct": 2,
+    "fb": "'The bleak December.' Cold, dark, and the end of the year — the setting matches his mood."
+   }
   ],
-  sa:{q:"He says each dying ember 'wrought its ghost upon the floor.' Explain what he actually sees, and why 'ghost' is the right word here.",
-      hint:"Literally: firelight throwing shadows. But 'ghost' ties the room to death — and to Lenore.",
-      minWords:15,
-      core:[["shadow","shadows","shape","shapes"],["fire","ember","embers","firelight"],["death","dead","dying","ghost","haunt","haunted"]],
-      support:["lenore","grief","memory","floor","light","cold","dark"],
-      phrases:["dying ember","upon the floor","reminds him"]}
-},
-
-s3:{
-  watch:"He is alone, and the room has started to frighten him.",
-  focus:"He talks to himself here. Listen for why — what is he trying to do to his own body?",
-  debrief:{ok:"Right. He repeats a safe explanation to slow his heart down.",
-            no:"'To still the beating of my heart' — he is talking himself calm, not talking to anyone else."},
-  writeIntro:"Two parts: find two frightened words, then explain the fear. Answer both parts.",
-  mc:[
-   {q:"Why does he repeat \"'Tis some visitor\" to himself?",
-    opts:["So the visitor can hear him.","To calm himself down.","He has forgotten what he was saying.","He is practising for a play."],
-    correct:1,
-    fb:"'To still the beating of my heart.' Repeating a safe explanation is how he tries to control his fear."},
-   {q:"What makes the frightening sound in this stanza?",
-    opts:["The raven's wings","The purple curtains rustling","A voice outside","The fire"],
-    correct:1,
-    fb:"'The silken, sad, uncertain rustling of each purple curtain.' Nothing dangerous — but at midnight, in grief, it is enough."}
+  "sa": {
+   "q": "He says each dying ember 'wrought its ghost upon the floor.' Explain what he actually sees, and why 'ghost' is the right word here.",
+   "hint": "Literally: firelight throwing shadows. But 'ghost' ties the room to death — and to Lenore.",
+   "minWords": 15,
+   "core": [
+    [
+     "shadow",
+     "shadows",
+     "shape",
+     "shapes"
+    ],
+    [
+     "fire",
+     "ember",
+     "embers",
+     "firelight"
+    ],
+    [
+     "death",
+     "dead",
+     "dying",
+     "ghost",
+     "haunt",
+     "haunted"
+    ]
+   ],
+   "support": [
+    "lenore",
+    "grief",
+    "memory",
+    "floor",
+    "light",
+    "cold",
+    "dark"
+   ],
+   "phrases": [
+    "dying ember",
+    "upon the floor",
+    "reminds him"
+   ]
+  }
+ },
+ "s3": {
+  "watch": "He is alone, and the room has started to frighten him.",
+  "focus": "He talks to himself here. Listen for why — what is he trying to do to his own body?",
+  "debrief": {
+   "ok": "Right. He repeats a safe explanation to slow his heart down.",
+   "no": "'To still the beating of my heart' — he is talking himself calm, not talking to anyone else."
+  },
+  "writeIntro": "Two parts: find two frightened words, then explain the fear. Answer both parts.",
+  "mc": [
+   {
+    "q": "Why does he repeat \"'Tis some visitor\" to himself?",
+    "opts": [
+     "So the visitor can hear him.",
+     "To calm himself down.",
+     "He has forgotten what he was saying.",
+     "He is practising for a play."
+    ],
+    "correct": 1,
+    "fb": "'To still the beating of my heart.' Repeating a safe explanation is how he tries to control his fear."
+   },
+   {
+    "q": "What makes the frightening sound in this stanza?",
+    "opts": [
+     "The purple curtains rustling",
+     "The raven's wings beating",
+     "A voice from outside the door",
+     "The fire dying in the grate"
+    ],
+    "correct": 0,
+    "fb": "'The silken, sad, uncertain rustling of each purple curtain.' Nothing dangerous — but at midnight, in grief, it is enough."
+   }
   ],
-  sa:{q:"Find two words in this stanza that show he is frightened. Then explain why a moving curtain would scare him on this particular night.",
-      hint:"Look for 'terrors' and 'beating of my heart'. Then remember: he is grieving, alone, and it is past midnight.",
-      minWords:18,
-      core:[["terror","terrors","fear","afraid","frightened","scared"],["heart","beating","pulse"],["alone","lonely","grief","grieving","midnight","night","imagination"]],
-      support:["curtain","rustling","dark","nerves","tired","silence","jumpy"],
-      phrases:["fantastic terrors","beating of my heart","never felt before"]}
-},
-
-s4:{
-  watch:"He opens the door. Watch what is standing there.",
-  focus:"He opens the door — and then he whispers one word into the dark. Listen for what answers him.",
-  debrief:{ok:"Yes — only his own echo. That is the loneliest moment in the whole poem.",
-            no:"'An echo murmured back the word.' There is nobody there. He hears himself."},
-  writeIntro:"This asks what he was secretly hoping for. Use the one word he whispers as your evidence.",
-  mc:[
-   {q:"What does he find when he opens the door?",
-    opts:["A stranger in a black coat","The raven","Darkness and nothing else","A letter on the step"],
-    correct:2,
-    fb:"'Darkness there and nothing more.' The poem keeps giving him nothing where he hoped for something."},
-   {q:"When he whispers \"Lenore?\", what answers him?",
-    opts:["A woman's voice","The raven","An echo of his own voice","A knock at the window"],
-    correct:2,
-    fb:"'An echo murmured back the word, \"Lenore!\"' Even his hope comes back to him empty."}
+  "sa": {
+   "q": "Find two words in this stanza that show he is frightened. Then explain why a moving curtain would scare him on this particular night.",
+   "hint": "Look for 'terrors' and 'beating of my heart'. Then remember: he is grieving, alone, and it is past midnight.",
+   "minWords": 18,
+   "core": [
+    [
+     "terror",
+     "terrors",
+     "fear",
+     "afraid",
+     "frightened",
+     "scared"
+    ],
+    [
+     "heart",
+     "beating",
+     "pulse"
+    ],
+    [
+     "alone",
+     "lonely",
+     "grief",
+     "grieving",
+     "midnight",
+     "night",
+     "imagination"
+    ]
+   ],
+   "support": [
+    "curtain",
+    "rustling",
+    "dark",
+    "nerves",
+    "tired",
+    "silence",
+    "jumpy"
+   ],
+   "phrases": [
+    "fantastic terrors",
+    "beating of my heart",
+    "never felt before"
+   ]
+  }
+ },
+ "s4": {
+  "watch": "He opens the door. Watch what is standing there.",
+  "focus": "He opens the door — and then he whispers one word into the dark. Listen for what answers him.",
+  "debrief": {
+   "ok": "Yes — only his own echo. That is the loneliest moment in the whole poem.",
+   "no": "'An echo murmured back the word.' There is nobody there. He hears himself."
+  },
+  "writeIntro": "This asks what he was secretly hoping for. Use the one word he whispers as your evidence.",
+  "mc": [
+   {
+    "q": "What does he find when he opens the door?",
+    "opts": [
+     "A stranger in a black coat",
+     "Darkness and nothing else",
+     "The raven",
+     "A letter on the step"
+    ],
+    "correct": 1,
+    "fb": "'Darkness there and nothing more.' The poem keeps giving him nothing where he hoped for something."
+   },
+   {
+    "q": "When he whispers \"Lenore?\", what answers him?",
+    "opts": [
+     "A woman's voice",
+     "The raven",
+     "An echo of his own voice",
+     "A knock at the window again"
+    ],
+    "correct": 2,
+    "fb": "'An echo murmured back the word, \"Lenore!\"' Even his hope comes back to him empty."
+   }
   ],
-  sa:{q:"He opens the door hoping for something, and finds 'darkness there and nothing more.' What was he secretly hoping to find, and how do you know?",
-      hint:"He whispers one particular word into the empty dark. That word is your evidence.",
-      minWords:18,
-      core:[["lenore","her"],["hope","hoping","hoped","wish","wished","wanted"],["ghost","spirit","return","back","alive","see"]],
-      support:["dead","died","grief","whisper","whispered","love","miss","echo"],
-      phrases:["whispered the word","hoped it was lenore","come back"]}
-},
-
-s5:{
-  watch:"The sound comes again — but it has moved.",
-  focus:"Compare this sound with the very first one. Two things about it have changed. Listen for both.",
-  debrief:{ok:"Good ear. Louder, and now at the window instead of the door. The poem is closing in on him.",
-            no:"'A tapping somewhat louder than before' — and now 'at my window lattice'. Louder, and closer."},
-  writeIntro:"You are looking at a pattern of behaviour, not a single moment. What does the repeating tell you?",
-  mc:[
-   {q:"How has the sound changed?",
-    opts:["Quieter and further away","It stopped completely","Louder, and now at the window","It became a voice"],
-    correct:2,
-    fb:"Louder, and it has moved from door to window. Poe tightens the screw one turn at a time."},
-   {q:"What explanation does he give himself this time?",
-    opts:["It is the wind.","It is a ghost.","It is a servant.","It is his imagination."],
-    correct:0,
-    fb:"''Tis the wind and nothing more!' That is the second safe explanation he has invented in five stanzas."}
+  "sa": {
+   "q": "He opens the door hoping for something, and finds 'darkness there and nothing more.' What was he secretly hoping to find, and how do you know?",
+   "hint": "He whispers one particular word into the empty dark. That word is your evidence.",
+   "minWords": 18,
+   "core": [
+    [
+     "lenore",
+     "her"
+    ],
+    [
+     "hope",
+     "hoping",
+     "hoped",
+     "wish",
+     "wished",
+     "wanted"
+    ],
+    [
+     "ghost",
+     "spirit",
+     "return",
+     "back",
+     "alive",
+     "see"
+    ]
+   ],
+   "support": [
+    "dead",
+    "died",
+    "grief",
+    "whisper",
+    "whispered",
+    "love",
+    "miss",
+    "echo"
+   ],
+   "phrases": [
+    "whispered the word",
+    "hoped it was lenore",
+    "come back"
+   ]
+  }
+ },
+ "s5": {
+  "watch": "The sound comes again — but it has moved.",
+  "focus": "Compare this sound with the very first one. Two things about it have changed. Listen for both.",
+  "debrief": {
+   "ok": "Good ear. Louder, and now at the window instead of the door. The poem is closing in on him.",
+   "no": "'A tapping somewhat louder than before' — and now 'at my window lattice'. Louder, and closer."
+  },
+  "writeIntro": "You are looking at a pattern of behaviour, not a single moment. What does the repeating tell you?",
+  "mc": [
+   {
+    "q": "How has the sound changed?",
+    "opts": [
+     "Quieter and further away",
+     "It stopped completely",
+     "It became a voice",
+     "Louder, and now at the window"
+    ],
+    "correct": 3,
+    "fb": "Louder, and it has moved from door to window. Poe tightens the screw one turn at a time."
+   },
+   {
+    "q": "What explanation does he give himself this time?",
+    "opts": [
+     "It is the wind.",
+     "It is a ghost.",
+     "It is a servant.",
+     "It is his imagination."
+    ],
+    "correct": 0,
+    "fb": "''Tis the wind and nothing more!' That is the second safe explanation he has invented in five stanzas."
+   }
   ],
-  sa:{q:"Twice now he has explained the sound away — first 'some visitor', now 'the wind'. What does this repeated behaviour tell you about him?",
-      hint:"Ask yourself: is a genuinely calm person repeating reassurance to himself?",
-      minWords:18,
-      core:[["afraid","scared","fear","frightened","nervous","anxious"],["calm","convince","reassure","control","tells himself","persuade"],["repeat","repeats","again","twice","pattern"]],
-      support:["denial","excuse","logic","rational","pretend","brave","deny"],
-      phrases:["trying to calm","not really calm","talking himself"]}
-}
-,
-s6:{
-  watch:"This is the moment the poem is famous for. Watch the bird come in.",
-  focus:"The bird is about to enter. Watch where it chooses to sit — the poet picked that spot on purpose.",
-  debrief:{ok:"Yes! On the goddess of wisdom. That makes everything the bird says sound like a judgement.",
-            no:"It lands on 'a bust of Pallas' — Pallas Athena, goddess of wisdom. That choice makes the bird seem wise."},
-  writeIntro:"Describe behaviour, then find your evidence. Which exact words show the bird is not afraid?",
-  mc:[
-   {q:"Where does the raven sit?",
-    opts:["On the window sill","On a statue of the goddess of wisdom","On the fireplace","On the speaker's shoulder"],
-    correct:1,
-    fb:"On the bust of Pallas Athena, above the door. Sitting on wisdom makes its one word sound like truth."},
-   {q:"How does the raven behave when it enters?",
-    opts:["Nervous and quick, like a trapped animal","Proud and calm, like a lord entering his own house",
-          "Friendly, landing on his hand","Frightened, hiding in a corner"],
-    correct:1,
-    fb:"'Not the least obeisance made he… with mien of lord or lady.' It does not bow. It owns the room."}
+  "sa": {
+   "q": "Twice now he has explained the sound away — first 'some visitor', now 'the wind'. What does this repeated behaviour tell you about him?",
+   "hint": "Ask yourself: is a genuinely calm person repeating reassurance to himself?",
+   "minWords": 18,
+   "core": [
+    [
+     "afraid",
+     "scared",
+     "fear",
+     "frightened",
+     "nervous",
+     "anxious"
+    ],
+    [
+     "calm",
+     "convince",
+     "reassure",
+     "control",
+     "tells himself",
+     "persuade"
+    ],
+    [
+     "repeat",
+     "repeats",
+     "again",
+     "twice",
+     "pattern"
+    ]
+   ],
+   "support": [
+    "denial",
+    "excuse",
+    "logic",
+    "rational",
+    "pretend",
+    "brave",
+    "deny"
+   ],
+   "phrases": [
+    "trying to calm",
+    "not really calm",
+    "talking himself"
+   ]
+  }
+ },
+ "s6": {
+  "watch": "This is the moment the poem is famous for. Watch the bird come in.",
+  "focus": "The bird is about to enter. Watch where it chooses to sit — the poet picked that spot on purpose.",
+  "debrief": {
+   "ok": "Yes! On the goddess of wisdom. That makes everything the bird says sound like a judgement.",
+   "no": "It lands on 'a bust of Pallas' — Pallas Athena, goddess of wisdom. That choice makes the bird seem wise."
+  },
+  "writeIntro": "Describe behaviour, then find your evidence. Which exact words show the bird is not afraid?",
+  "mc": [
+   {
+    "q": "Where does the raven sit?",
+    "opts": [
+     "On the window sill above the door",
+     "On the back of the speaker's own chair",
+     "On the mantel above the fireplace",
+     "On a statue of the goddess of wisdom"
+    ],
+    "correct": 3,
+    "fb": "On the bust of Pallas Athena, above the door. Sitting on wisdom makes its one word sound like truth."
+   },
+   {
+    "q": "How does the raven behave when it enters?",
+    "opts": [
+     "Nervous and quick, like an animal caught inside a trap",
+     "Frightened, hiding in the darkest corner",
+     "Friendly, landing gently on his open hand",
+     "Proud and calm, like a lord entering his own house"
+    ],
+    "correct": 3,
+    "fb": "'Not the least obeisance made he… with mien of lord or lady.' It does not bow. It owns the room."
+   }
   ],
-  sa:{q:"Describe how the raven behaves when it enters the room. Which words show it is not afraid of the speaker?",
-      hint:"'Stately', 'not the least obeisance', 'mien of lord or lady' — all point the same way.",
-      minWords:18,
-      core:[["stately","proud","dignified","grand","noble"],["not afraid","unafraid","fearless","confident","calm","bold"],["lord","lady","master","owns","authority","respect","obeisance","bow"]],
-      support:["perched","pallas","bust","wisdom","door","walked","stepped"],
-      phrases:["did not bow","mien of lord","as if he owned"]}
-},
-
-s7:{
-  watch:"He speaks to the bird. And — listen — the bird speaks back.",
-  focus:"Something surprising happens to his face in this stanza. Watch his mood, not the bird's.",
-  debrief:{ok:"Right — he smiles. Keep hold of that. The poem is not frightening yet.",
-            no:"'Beguiling my sad fancy into smiling.' At this point the bird is entertainment, not horror."},
-  writeIntro:"Explain the joke first, then compare his mood here with the end of the poem.",
-  mc:[
-   {q:"What is his first reaction to the raven?",
-    opts:["Terror — he runs away","Amusement — it makes him smile","Anger — he throws something","He faints"],
-    correct:1,
-    fb:"'Beguiling my sad fancy into smiling.' The mood turns much later, and that is exactly why the ending lands so hard."},
-   {q:"What single word does the raven say?",
-    opts:["\"Lenore\"","\"Forever\"","\"Nevermore\"","\"Goodbye\""],
-    correct:2,
-    fb:"'Quoth the Raven \"Nevermore.\"' One word — and it will answer every question from here on."}
+  "sa": {
+   "q": "Describe how the raven behaves when it enters the room. Which words show it is not afraid of the speaker?",
+   "hint": "'Stately', 'not the least obeisance', 'mien of lord or lady' — all point the same way.",
+   "minWords": 18,
+   "core": [
+    [
+     "stately",
+     "proud",
+     "dignified",
+     "grand",
+     "noble"
+    ],
+    [
+     "not afraid",
+     "unafraid",
+     "fearless",
+     "confident",
+     "calm",
+     "bold"
+    ],
+    [
+     "lord",
+     "lady",
+     "master",
+     "owns",
+     "authority",
+     "respect",
+     "obeisance",
+     "bow"
+    ]
+   ],
+   "support": [
+    "perched",
+    "pallas",
+    "bust",
+    "wisdom",
+    "door",
+    "walked",
+    "stepped"
+   ],
+   "phrases": [
+    "did not bow",
+    "mien of lord",
+    "as if he owned"
+   ]
+  }
+ },
+ "s7": {
+  "watch": "He speaks to the bird. And — listen — the bird speaks back.",
+  "focus": "Something surprising happens to his face in this stanza. Watch his mood, not the bird's.",
+  "debrief": {
+   "ok": "Right — he smiles. Keep hold of that. The poem is not frightening yet.",
+   "no": "'Beguiling my sad fancy into smiling.' At this point the bird is entertainment, not horror."
+  },
+  "writeIntro": "Explain the joke first, then compare his mood here with the end of the poem.",
+  "mc": [
+   {
+    "q": "What is his first reaction to the raven?",
+    "opts": [
+     "Terror — he runs away",
+     "Amusement — it makes him smile",
+     "Anger — he throws something at it",
+     "He faints"
+    ],
+    "correct": 1,
+    "fb": "'Beguiling my sad fancy into smiling.' The mood turns much later, and that is exactly why the ending lands so hard."
+   },
+   {
+    "q": "What single word does the raven say?",
+    "opts": [
+     "\"Lenore\"",
+     "\"Nevermore\"",
+     "\"Forevermore\"",
+     "\"Goodbye\""
+    ],
+    "correct": 1,
+    "fb": "'Quoth the Raven \"Nevermore.\"' One word — and it will answer every question from here on."
+   }
   ],
-  sa:{q:"Explain the joke he makes when he first speaks to the raven. Why does it matter that he can still joke at this point?",
-      hint:"He asks a bird for its 'lordly name', as if it were a nobleman. Now compare that mood to the final stanza.",
-      minWords:20,
-      core:[["joke","joking","jokes","funny","teasing","amused","smile","smiling"],["name","lordly","noble","title"],["mood","change","changes","later","contrast","different","end"]],
-      support:["light","happy","serious","dark","sad","begins","start"],
-      phrases:["asks its name","still able to joke","changes later"]}
-},
-
-s8:{
-  watch:"The bird says nothing else. Watch the silence do the work.",
-  focus:"He comes up with a sensible, logical explanation for the bird. Listen for what it is — he will abandon it soon.",
-  debrief:{ok:"Yes. A previous owner taught it. Notice how reasonable he still sounds here.",
-            no:"He decides the word was 'caught from some unhappy master'. It is a completely sensible idea — and he drops it later."},
-  writeIntro:"Two parts again: what his life has been like, and why the answer hurts.",
-  mc:[
-   {q:"What logical explanation does he give for the bird's word?",
-    opts:["It is a message from Lenore.","It learned the word from an unlucky previous owner.",
-          "It is a demon in disguise.","It is copying something he said."],
-    correct:1,
-    fb:"'Caught from some unhappy master.' This is his last fully rational moment in the poem."},
-   {q:"What does he say will happen tomorrow?",
-    opts:["The bird will leave him, like everything else.","He will burn the books.","Lenore will return.","He will move house."],
-    correct:0,
-    fb:"'On the morrow he will leave me, as my Hopes have flown before.' Loss is the pattern of his whole life."}
+  "sa": {
+   "q": "Explain the joke he makes when he first speaks to the raven. Why does it matter that he can still joke at this point?",
+   "hint": "He asks a bird for its 'lordly name', as if it were a nobleman. Now compare that mood to the final stanza.",
+   "minWords": 20,
+   "core": [
+    [
+     "joke",
+     "joking",
+     "jokes",
+     "funny",
+     "teasing",
+     "amused",
+     "smile",
+     "smiling"
+    ],
+    [
+     "name",
+     "lordly",
+     "noble",
+     "title"
+    ],
+    [
+     "mood",
+     "change",
+     "changes",
+     "later",
+     "contrast",
+     "different",
+     "end"
+    ]
+   ],
+   "support": [
+    "light",
+    "happy",
+    "serious",
+    "dark",
+    "sad",
+    "begins",
+    "start"
+   ],
+   "phrases": [
+    "asks its name",
+    "still able to joke",
+    "changes later"
+   ]
+  }
+ },
+ "s8": {
+  "watch": "The bird says nothing else. Watch the silence do the work.",
+  "focus": "He comes up with a sensible, logical explanation for the bird. Listen for what it is — he will abandon it soon.",
+  "debrief": {
+   "ok": "Yes. A previous owner taught it. Notice how reasonable he still sounds here.",
+   "no": "He decides the word was 'caught from some unhappy master'. It is a completely sensible idea — and he drops it later."
+  },
+  "writeIntro": "Two parts again: what his life has been like, and why the answer hurts.",
+  "mc": [
+   {
+    "q": "What logical explanation does he give for the bird's word?",
+    "opts": [
+     "It is a message sent to him from Lenore herself.",
+     "It is copying something he said earlier tonight.",
+     "It is a demon that has taken on the shape of a bird.",
+     "It learned the word from an unlucky former owner."
+    ],
+    "correct": 3,
+    "fb": "'Caught from some unhappy master.' This is his last fully rational moment in the poem."
+   },
+   {
+    "q": "What does he say will happen tomorrow?",
+    "opts": [
+     "Lenore will come back to him at last.",
+     "He will burn the old books and forget it all.",
+     "The bird will leave him, like everything else.",
+     "He will leave the house and not come back at all."
+    ],
+    "correct": 2,
+    "fb": "'On the morrow he will leave me, as my Hopes have flown before.' Loss is the pattern of his whole life."
+   }
   ],
-  sa:{q:"He says other friends have left him before. What does this tell us about his life, and why does the raven's answer upset him?",
-      hint:"Think about loss as a pattern, not a single event. Then think about what 'Nevermore' promises.",
-      minWords:20,
-      core:[["alone","lonely","loneliness","abandoned"],["loss","lost","left","leave","gone","losing"],["hope","hopes","hopeless","never","permanent","forever"]],
-      support:["friends","lenore","grief","died","pattern","again","always","sad"],
-      phrases:["everyone leaves","hopes have flown","will never change"]}
-},
-
-s9:{
-  watch:"He pulls a chair right up to the bird. This is where it turns.",
-  focus:"He rests his head on a cushion — an ordinary object. Watch what thought it brings.",
-  debrief:{ok:"That is the turn. A cushion, of all things, breaks him. Grief really does work like that.",
-            no:"'But whose velvet violet lining… She shall press, ah, nevermore!' The cushion reminds him Lenore will never sit there again."},
-  writeIntro:"Name the trigger, then explain the change. One concrete detail is enough.",
-  mc:[
-   {q:"What painful thought comes to him as he rests on the velvet cushion?",
-    opts:["The raven will attack him.","Lenore will never rest her head there again.",
-          "He has forgotten her face.","Morning will never come."],
-    correct:1,
-    fb:"An ordinary cushion suddenly becomes unbearable. That is how grief ambushes people."},
-   {q:"What is he doing while he sits in front of the bird?",
-    opts:["Shouting at it","Silently guessing what it means","Writing a letter","Falling asleep"],
-    correct:1,
-    fb:"'This I sat engaged in guessing, but no syllable expressing.' He says nothing out loud — it is all happening inside."}
+  "sa": {
+   "q": "He says other friends have left him before. What does this tell us about his life, and why does the raven's answer upset him?",
+   "hint": "Think about loss as a pattern, not a single event. Then think about what 'Nevermore' promises.",
+   "minWords": 20,
+   "core": [
+    [
+     "alone",
+     "lonely",
+     "loneliness",
+     "abandoned"
+    ],
+    [
+     "loss",
+     "lost",
+     "left",
+     "leave",
+     "gone",
+     "losing"
+    ],
+    [
+     "hope",
+     "hopes",
+     "hopeless",
+     "never",
+     "permanent",
+     "forever"
+    ]
+   ],
+   "support": [
+    "friends",
+    "lenore",
+    "grief",
+    "died",
+    "pattern",
+    "again",
+    "always",
+    "sad"
+   ],
+   "phrases": [
+    "everyone leaves",
+    "hopes have flown",
+    "will never change"
+   ]
+  }
+ },
+ "s9": {
+  "watch": "He pulls a chair right up to the bird. This is where it turns.",
+  "focus": "He rests his head on a cushion — an ordinary object. Watch what thought it brings.",
+  "debrief": {
+   "ok": "That is the turn. A cushion, of all things, breaks him. Grief really does work like that.",
+   "no": "'But whose velvet violet lining… She shall press, ah, nevermore!' The cushion reminds him Lenore will never sit there again."
+  },
+  "writeIntro": "Name the trigger, then explain the change. One concrete detail is enough.",
+  "mc": [
+   {
+    "q": "What painful thought comes to him as he rests on the velvet cushion?",
+    "opts": [
+     "The raven will attack him in the night.",
+     "He has already forgotten her face.",
+     "Lenore will never rest her head there again.",
+     "Dawn is still a great many hours away."
+    ],
+    "correct": 2,
+    "fb": "An ordinary cushion suddenly becomes unbearable. That is how grief ambushes people."
+   },
+   {
+    "q": "What is he doing while he sits in front of the bird?",
+    "opts": [
+     "Shouting angrily at it",
+     "Falling asleep in his reading chair",
+     "Writing a letter to Lenore",
+     "Silently guessing what it means"
+    ],
+    "correct": 3,
+    "fb": "'This I sat engaged in guessing, but no syllable expressing.' He says nothing out loud — it is all happening inside."
+   }
   ],
-  sa:{q:"This is where the poem turns from curiosity to pain. Explain what causes the change, using one detail from the stanza.",
-      hint:"He is comfortable and thinking calmly — and then an everyday object triggers a memory.",
-      minWords:20,
-      core:[["cushion","velvet","chair","seat"],["lenore","she","her"],["memory","remember","reminds","reminded","thought"],["pain","sad","grief","hurt","sorrow","turns","change"]],
-      support:["never","nevermore","press","head","lamp","light","comfortable"],
-      phrases:["she shall press","never again","reminds him of"]}
-},
-
-s10:{
-  watch:"The air thickens. He starts to argue with a bird.",
-  focus:"He changes what he thinks the bird IS. Listen for the new word he calls it.",
-  debrief:{ok:"'Prophet.' He now believes it tells the truth — which means he is choosing to be hurt.",
-            no:"He calls it 'Prophet!' — a being who speaks true things. Once he believes it, every answer wounds him."},
-  writeIntro:"This one has no single right answer. Take a position and give a reason.",
-  mc:[
-   {q:"How does his attitude toward the raven change here?",
-    opts:["He stops caring about it.","He begins treating it as a prophet who knows the truth.",
-          "He decides it is a friendly pet.","He realises it is a person in a costume."],
-    correct:1,
-    fb:"Calling it 'Prophet!' is the key change. He has started believing the answers."},
-   {q:"What does he beg the raven to tell him?",
-    opts:["Whether there is any comfort for his pain","Where the bird came from",
-          "What time it is","Whether the storm will end"],
-    correct:0,
-    fb:"'Is there — is there balm in Gilead?' He is asking whether anything can heal him. The answer is no."}
+  "sa": {
+   "q": "This is where the poem turns from curiosity to pain. Explain what causes the change, using one detail from the stanza.",
+   "hint": "He is comfortable and thinking calmly — and then an everyday object triggers a memory.",
+   "minWords": 20,
+   "core": [
+    [
+     "cushion",
+     "velvet",
+     "chair",
+     "seat"
+    ],
+    [
+     "lenore",
+     "she",
+     "her"
+    ],
+    [
+     "memory",
+     "remember",
+     "reminds",
+     "reminded",
+     "thought"
+    ],
+    [
+     "pain",
+     "sad",
+     "grief",
+     "hurt",
+     "sorrow",
+     "turns",
+     "change"
+    ]
+   ],
+   "support": [
+    "never",
+    "nevermore",
+    "press",
+    "head",
+    "lamp",
+    "light",
+    "comfortable"
+   ],
+   "phrases": [
+    "she shall press",
+    "never again",
+    "reminds him of"
+   ]
+  }
+ },
+ "s10": {
+  "watch": "The air thickens. He starts to argue with a bird.",
+  "focus": "He changes what he thinks the bird IS. Listen for the new word he calls it.",
+  "debrief": {
+   "ok": "'Prophet.' He now believes it tells the truth — which means he is choosing to be hurt.",
+   "no": "He calls it 'Prophet!' — a being who speaks true things. Once he believes it, every answer wounds him."
+  },
+  "writeIntro": "This one has no single right answer. Take a position and give a reason.",
+  "mc": [
+   {
+    "q": "How does his attitude toward the raven change here?",
+    "opts": [
+     "He stops caring about it at all and ignores it completely.",
+     "He begins treating it as a prophet who knows the truth.",
+     "He decides it is a friendly pet he might keep.",
+     "He realises it must be a person in a costume."
+    ],
+    "correct": 1,
+    "fb": "Calling it 'Prophet!' is the key change. He has started believing the answers."
+   },
+   {
+    "q": "What does he beg the raven to tell him?",
+    "opts": [
+     "What the time is on the clock",
+     "Where the bird first came from",
+     "Whether there is any comfort for his pain",
+     "Whether the storm outside will end"
+    ],
+    "correct": 2,
+    "fb": "'Is there — is there balm in Gilead?' He is asking whether anything can heal him. The answer is no."
+   }
   ],
-  sa:{q:"He keeps asking the raven questions when he already knows the answer will be 'Nevermore.' Why do you think he keeps asking?",
-      hint:"There is no wrong answer here. But you must give a reason. Do some people want their pain confirmed?",
-      minWords:20,
-      core:[["knows","already","expects","predict"],["pain","hurt","suffering","torture","punish","hurts"],["because","think","believe","opinion","reason"]],
-      support:["hope","control","grief","proof","confirm","stop","cannot","obsessed","deliberately","choice"],
-      phrases:["he wants to hurt","cannot stop","punishing himself","wants proof"]}
-}
-,
-s11:{
-  watch:"Now he asks the only question he actually cares about.",
-  focus:"Everything so far has been building to one question. Listen for it — it is about heaven.",
-  debrief:{ok:"That is the real question, and 'Nevermore' takes away his very last hope.",
-            no:"He asks whether he will hold Lenore again 'within the distant Aidenn' — in heaven. That is the question that breaks him."},
-  writeIntro:"This is a metaphor question. Explain what the image means, not what literally happens.",
-  mc:[
-   {q:"What is his final, most important question?",
-    opts:["Whether the storm will end","Whether he will meet Lenore again in heaven",
-          "Whether the bird has a real name","Whether God is listening"],
-    correct:1,
-    fb:"'Shall clasp a sainted maiden whom the angels name Lenore.' Not just her return — ever seeing her again at all."},
-   {q:"What does he order the raven to do?",
-    opts:["Sing him a song","Go back into the storm and leave him","Stay with him forever","Find Lenore"],
-    correct:1,
-    fb:"'Get thee back into the tempest!' He screams at it to go — and of course it answers 'Nevermore'."}
+  "sa": {
+   "q": "He keeps asking the raven questions when he already knows the answer will be 'Nevermore.' Why do you think he keeps asking?",
+   "hint": "There is no wrong answer here. But you must give a reason. Do some people want their pain confirmed?",
+   "minWords": 20,
+   "core": [
+    [
+     "knows",
+     "already",
+     "expects",
+     "predict"
+    ],
+    [
+     "pain",
+     "hurt",
+     "suffering",
+     "torture",
+     "punish",
+     "hurts"
+    ],
+    [
+     "because",
+     "think",
+     "believe",
+     "opinion",
+     "reason"
+    ]
+   ],
+   "support": [
+    "hope",
+    "control",
+    "grief",
+    "proof",
+    "confirm",
+    "stop",
+    "cannot",
+    "obsessed",
+    "deliberately",
+    "choice"
+   ],
+   "phrases": [
+    "he wants to hurt",
+    "cannot stop",
+    "punishing himself",
+    "wants proof"
+   ]
+  }
+ },
+ "s11": {
+  "watch": "Now he asks the only question he actually cares about.",
+  "focus": "Everything so far has been building to one question. Listen for it — it is about heaven.",
+  "debrief": {
+   "ok": "That is the real question, and 'Nevermore' takes away his very last hope.",
+   "no": "He asks whether he will hold Lenore again 'within the distant Aidenn' — in heaven. That is the question that breaks him."
+  },
+  "writeIntro": "This is a metaphor question. Explain what the image means, not what literally happens.",
+  "mc": [
+   {
+    "q": "What is his final, most important question?",
+    "opts": [
+     "Whether he will meet Lenore again in heaven",
+     "Whether the storm will end by morning",
+     "Whether the bird has a real name",
+     "Whether God is listening to him at all"
+    ],
+    "correct": 0,
+    "fb": "'Shall clasp a sainted maiden whom the angels name Lenore.' Not just her return — ever seeing her again at all."
+   },
+   {
+    "q": "What does he order the raven to do?",
+    "opts": [
+     "Sing him a song about Lenore",
+     "Find Lenore and bring her back",
+     "Stay with him in the room for ever after",
+     "Go back into the storm and leave him"
+    ],
+    "correct": 3,
+    "fb": "'Get thee back into the tempest!' He screams at it to go — and of course it answers 'Nevermore'."
+   }
   ],
-  sa:{q:"He tells the raven to 'take thy beak from out my heart.' The bird has never touched him. Explain what he really means.",
-      hint:"This is a metaphor. What is actually causing the pain in his chest?",
-      minWords:20,
-      core:[["metaphor","not literal","figurative","image","imagery"],["pain","hurt","hurts","wound","stab","ache"],["word","words","nevermore","answer","truth"]],
-      support:["heart","emotional","grief","hope","destroyed","feeling","inside","mind"],
-      phrases:["not actually touching","the word hurts","emotional pain"]}
-},
-
-s12:{
-  watch:"Last one. Watch what does not happen — the bird never leaves.",
-  focus:"Watch the verb tense in this stanza. Something changes from all the stanzas before it.",
-  debrief:{ok:"Present tense. 'Still is sitting.' It is happening now, and it never stops.",
-            no:"Everything before was past tense. Here it becomes 'still is sitting' — present. His grief has no ending, so the poem refuses to give us one."},
-  writeIntro:"An opinion question to finish. Either answer is fine, but ground it in the poem.",
-  mc:[
-   {q:"Why does the poem switch to the present tense at the end?",
-    opts:["Poe made a mistake.","To show the raven flew away.",
-          "To show the suffering is still happening now.","To show a long time has passed."],
-    correct:2,
-    fb:"Everything before is past tense. The switch traps the reader in the moment with him — permanently."},
-   {q:"What is the very last image of the poem?",
-    opts:["The raven flying into the storm","Morning light through the window",
-          "His soul trapped in the bird's shadow on the floor","Lenore appearing at the door"],
-    correct:2,
-    fb:"'My soul from out that shadow… shall be lifted — nevermore!' The poem ends inside the shadow, not outside it."}
+  "sa": {
+   "q": "He tells the raven to 'take thy beak from out my heart.' The bird has never touched him. Explain what he really means.",
+   "hint": "This is a metaphor. What is actually causing the pain in his chest?",
+   "minWords": 20,
+   "core": [
+    [
+     "metaphor",
+     "not literal",
+     "figurative",
+     "image",
+     "imagery"
+    ],
+    [
+     "pain",
+     "hurt",
+     "hurts",
+     "wound",
+     "stab",
+     "ache"
+    ],
+    [
+     "word",
+     "words",
+     "nevermore",
+     "answer",
+     "truth"
+    ]
+   ],
+   "support": [
+    "heart",
+    "emotional",
+    "grief",
+    "hope",
+    "destroyed",
+    "feeling",
+    "inside",
+    "mind"
+   ],
+   "phrases": [
+    "not actually touching",
+    "the word hurts",
+    "emotional pain"
+   ]
+  }
+ },
+ "s12": {
+  "watch": "Last one. Watch what does not happen — the bird never leaves.",
+  "focus": "Watch the verb tense in this stanza. Something changes from all the stanzas before it.",
+  "debrief": {
+   "ok": "Present tense. 'Still is sitting.' It is happening now, and it never stops.",
+   "no": "Everything before was past tense. Here it becomes 'still is sitting' — present. His grief has no ending, so the poem refuses to give us one."
+  },
+  "writeIntro": "An opinion question to finish. Either answer is fine, but ground it in the poem.",
+  "mc": [
+   {
+    "q": "Why does the poem switch to the present tense at the end?",
+    "opts": [
+     "Poe made a mistake while writing it.",
+     "To show the suffering is still happening now.",
+     "To show the raven finally flew away.",
+     "To show that a long time has passed since then."
+    ],
+    "correct": 1,
+    "fb": "Everything before is past tense. The switch traps the reader in the moment with him — permanently."
+   },
+   {
+    "q": "What is the very last image of the poem?",
+    "opts": [
+     "His soul trapped in the bird's shadow on the floor",
+     "Morning light coming through the open window",
+     "The raven flying away back into the storm",
+     "Lenore appearing suddenly in the doorway"
+    ],
+    "correct": 0,
+    "fb": "'My soul from out that shadow… shall be lifted — nevermore!' The poem ends inside the shadow, not outside it."
+   }
   ],
-  sa:{q:"The poem ends with his soul trapped in a shadow. Could he free himself if he wanted to? Give your opinion and support it from the poem.",
-      hint:"Remember: he chose to sit down in front of the bird, and he chose to keep asking. There is no wrong opinion — but you must give a reason.",
-      minWords:25,
-      core:[["choose","chose","choice","decided","could","chooses"],["opinion","think","believe","agree","disagree"],["because","since","evidence","shows","proves","example"]],
-      support:["trapped","shadow","soul","grief","asked","questions","stayed","sat","refuse","let go","cannot","stuck"],
-      phrases:["he chose to","kept asking","let her go","he could leave"]}
-},
-
-poe:{
-  watch:"Before we begin — this is the man who wrote it.",
-  focus:"You are about to read about Poe's life. Watch for how much money 'The Raven' actually made him.",
-  debrief:{ok:"Nine dollars. Famous everywhere, and still poor. That was a writer's life in 1845.",
-            no:"He was paid about nine dollars. He became famous within weeks — and died in poverty four years later."},
-  writeIntro:"An opinion question. Both answers are respectable — just tell me why.",
-  mc:[
-   {q:"Poe was paid roughly nine dollars for \"The Raven.\" What does that tell us?",
-    opts:["Poets were paid extremely well then.","Fame and money were separate — he became famous without becoming rich.",
-          "He refused payment.","Newspapers never paid writers."],
-    correct:1,
-    fb:"Copyright protection was weak and poems were reprinted everywhere without payment. He died poor four years later."},
-   {q:"Which modern kind of story did Poe invent?",
-    opts:["The detective story","The romance novel","The travel diary","The cookbook"],
-    correct:0,
-    fb:"'The Murders in the Rue Morgue' (1841) created the pattern Sherlock Holmes and every detective since has followed."}
+  "sa": {
+   "q": "The poem ends with his soul trapped in a shadow. Could he free himself if he wanted to? Give your opinion and support it from the poem.",
+   "hint": "Remember: he chose to sit down in front of the bird, and he chose to keep asking. There is no wrong opinion — but you must give a reason.",
+   "minWords": 25,
+   "core": [
+    [
+     "choose",
+     "chose",
+     "choice",
+     "decided",
+     "could",
+     "chooses"
+    ],
+    [
+     "opinion",
+     "think",
+     "believe",
+     "agree",
+     "disagree"
+    ],
+    [
+     "because",
+     "since",
+     "evidence",
+     "shows",
+     "proves",
+     "example"
+    ]
+   ],
+   "support": [
+    "trapped",
+    "shadow",
+    "soul",
+    "grief",
+    "asked",
+    "questions",
+    "stayed",
+    "sat",
+    "refuse",
+    "let go",
+    "cannot",
+    "stuck"
+   ],
+   "phrases": [
+    "he chose to",
+    "kept asking",
+    "let her go",
+    "he could leave"
+   ]
+  }
+ },
+ "poe": {
+  "watch": "Before we begin — this is the man who wrote it.",
+  "focus": "You are about to read about Poe's life. Watch for how much money 'The Raven' actually made him.",
+  "debrief": {
+   "ok": "Nine dollars. Famous everywhere, and still poor. That was a writer's life in 1845.",
+   "no": "He was paid about nine dollars. He became famous within weeks — and died in poverty four years later."
+  },
+  "writeIntro": "An opinion question. Both answers are respectable — just tell me why.",
+  "mc": [
+   {
+    "q": "Poe was paid roughly nine dollars for \"The Raven.\" What does that tell us?",
+    "opts": [
+     "Fame and money were separate: he got famous, not rich.",
+     "Poets were paid extremely well in those days.",
+     "He refused all payment for the poem on principle.",
+     "Newspapers rarely paid their writers anything."
+    ],
+    "correct": 0,
+    "fb": "Copyright protection was weak and poems were reprinted everywhere without payment. He died poor four years later."
+   },
+   {
+    "q": "Which modern kind of story did Poe invent?",
+    "opts": [
+     "The travel diary",
+     "The romantic adventure novel",
+     "The detective story",
+     "The cookbook"
+    ],
+    "correct": 2,
+    "fb": "'The Murders in the Rue Morgue' (1841) created the pattern Sherlock Holmes and every detective since has followed."
+   }
   ],
-  sa:{q:"Poe claimed he built \"The Raven\" like a machine — choosing the saddest sound first, then the word, then a creature that could say it. Does knowing this change how you feel about the poem?",
-      hint:"No correct answer. Some readers feel it becomes less sincere; others admire the craft even more. Pick a side and say why.",
-      minWords:25,
-      core:[["planned","planning","calculated","designed","built","constructed","machine"],["feel","feeling","emotion","sincere","real","honest","fake"],["because","think","opinion","agree","disagree","view"]],
-      support:["craft","skill","technique","admire","less","more","clever","cold","artificial","impressive"],
-      phrases:["philosophy of composition","less sincere","still moving","more impressive"]}
-},
-
-impact:{
-  watch:"And this is where the bird went afterwards. Everywhere.",
-  focus:"Look for the strangest place the poem ended up. It involves a sports team.",
-  debrief:{ok:"A football team, named by public vote, after a poem. Nothing else in sport comes close.",
-            no:"Baltimore's NFL team are the Ravens — fans voted for it in 1996 because Poe is buried there."},
-  writeIntro:"Final question. You are allowed to disagree with a famous poet — just argue it properly.",
-  mc:[
-   {q:"Why are the Baltimore Ravens a good example of the poem's reach?",
-    opts:["Poe was a famous athlete.","Ravens are Maryland's official bird.",
-          "A major sports team was named after a poem by public vote, 150 years later.","Poe's family founded the team."],
-    correct:2,
-    fb:"Fans voted for it in 1996 because Poe died and is buried in Baltimore. A poem shaping a sports brand is real cultural reach."},
-   {q:"Why did the poem spread so fast and so far?",
-    opts:["It was easy to remember, easy to perform and easy to copy.","It was required reading in every school.",
-          "It was the only poem printed that year.","It was translated into Korean first."],
-    correct:0,
-    fb:"Strong beat, one repeated word, and a shape any parodist can borrow. That combination travels."}
+  "sa": {
+   "q": "Poe claimed he built \"The Raven\" like a machine — choosing the saddest sound first, then the word, then a creature that could say it. Does knowing this change how you feel about the poem?",
+   "hint": "No correct answer. Some readers feel it becomes less sincere; others admire the craft even more. Pick a side and say why.",
+   "minWords": 25,
+   "core": [
+    [
+     "planned",
+     "planning",
+     "calculated",
+     "designed",
+     "built",
+     "constructed",
+     "machine"
+    ],
+    [
+     "feel",
+     "feeling",
+     "emotion",
+     "sincere",
+     "real",
+     "honest",
+     "fake"
+    ],
+    [
+     "because",
+     "think",
+     "opinion",
+     "agree",
+     "disagree",
+     "view"
+    ]
+   ],
+   "support": [
+    "craft",
+    "skill",
+    "technique",
+    "admire",
+    "less",
+    "more",
+    "clever",
+    "cold",
+    "artificial",
+    "impressive"
+   ],
+   "phrases": [
+    "philosophy of composition",
+    "less sincere",
+    "still moving",
+    "more impressive"
+   ]
+  }
+ },
+ "impact": {
+  "watch": "And this is where the bird went afterwards. Everywhere.",
+  "focus": "Look for the strangest place the poem ended up. It involves a sports team.",
+  "debrief": {
+   "ok": "A football team, named by public vote, after a poem. Nothing else in sport comes close.",
+   "no": "Baltimore's NFL team are the Ravens — fans voted for it in 1996 because Poe is buried there."
+  },
+  "writeIntro": "Final question. You are allowed to disagree with a famous poet — just argue it properly.",
+  "mc": [
+   {
+    "q": "Why are the Baltimore Ravens a good example of the poem's reach?",
+    "opts": [
+     "Poe was a famous athlete in Baltimore before he wrote.",
+     "A team was named after the poem by public vote, 150 years on.",
+     "Ravens are the official state bird of Maryland today.",
+     "Poe's own family founded the team generations ago."
+    ],
+    "correct": 1,
+    "fb": "Fans voted for it in 1996 because Poe died and is buried in Baltimore. A poem shaping a sports brand is real cultural reach."
+   },
+   {
+    "q": "Why did the poem spread so fast and so far?",
+    "opts": [
+     "It was easy to remember, easy to perform and easy to copy.",
+     "It was required reading in every school in America.",
+     "It was the only poem printed anywhere that year.",
+     "It was translated into Korean before English."
+    ],
+    "correct": 0,
+    "fb": "Strong beat, one repeated word, and a shape any parodist can borrow. That combination travels."
+   }
   ],
-  sa:{q:"Emerson called Poe \"the jingle man\" — meaning the poem sounds good but says little. Do you agree? Support your answer with something specific from the poem.",
-      hint:"Sound means rhythm and rhyme. Meaning means grief, hope, self-torture. You may argue either side — but quote something.",
-      minWords:25,
-      core:[["agree","disagree","think","opinion","believe"],["sound","rhythm","rhyme","music","musical","beat"],["meaning","deep","shallow","emotion","grief","theme","serious"]],
-      support:["jingle","nevermore","shadow","lenore","repetition","clever","empty","powerful","because","example"],
-      phrases:["i disagree","i agree","more than just","only sound"]}
-}
-
+  "sa": {
+   "q": "Emerson called Poe \"the jingle man\" — meaning the poem sounds good but says little. Do you agree? Support your answer with something specific from the poem.",
+   "hint": "Sound means rhythm and rhyme. Meaning means grief, hope, self-torture. You may argue either side — but quote something.",
+   "minWords": 25,
+   "core": [
+    [
+     "agree",
+     "disagree",
+     "think",
+     "opinion",
+     "believe"
+    ],
+    [
+     "sound",
+     "rhythm",
+     "rhyme",
+     "music",
+     "musical",
+     "beat"
+    ],
+    [
+     "meaning",
+     "deep",
+     "shallow",
+     "emotion",
+     "grief",
+     "theme",
+     "serious"
+    ]
+   ],
+   "support": [
+    "jingle",
+    "nevermore",
+    "shadow",
+    "lenore",
+    "repetition",
+    "clever",
+    "empty",
+    "powerful",
+    "because",
+    "example"
+   ],
+   "phrases": [
+    "i disagree",
+    "i agree",
+    "more than just",
+    "only sound"
+   ]
+  }
+ }
 };
 /* ============================================================
    GUIDE VOICE — Wren.
