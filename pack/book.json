@@ -2480,5 +2480,305 @@
    "name": "日本語",
    "en": "Japanese"
   }
- ]
+ ],
+ "soloCast": {
+  "members": {
+   "grandpa": {
+    "id": "grandpa",
+    "name": "Grandpa"
+   },
+   "kid": {
+    "id": "kid",
+    "name": "Nora"
+   }
+  }
+ },
+ "soloPreshow": [
+  {
+   "state": "happy",
+   "text": "Right. This is The Raven. Eighteen forty-five. One man, one room, one night, and a bird that only knows one word."
+  },
+  {
+   "state": "knowing",
+   "text": "It's a poem, not a story, but it reads like one — a man alone at midnight, grieving, and something knocking that won't leave once it's in."
+  },
+  {
+   "state": "talk",
+   "text": "The man never gets a name. Doesn't matter. What matters is who he's lost, and how far he'll go arguing with a bird about it."
+  },
+  {
+   "state": "ache",
+   "text": "Listen for the one word the bird ever says. By the end you'll understand exactly why Poe only needed one."
+  },
+  {
+   "state": "hush",
+   "text": "Okay. Quiet now. Grandpa reads it the way it's meant to be read — don't rush him."
+  },
+  {
+   "state": "lean",
+   "text": "I've heard this one so many times I could say the last line with him. It still gets me every time."
+  }
+ ],
+ "soloGuideVoice": {
+  "hello": "Hey — good, you came.",
+  "passIntro": {
+   "1": "First time you just watch. Grandpa reads, the pictures move. Don't try to be clever about it — just let it happen.",
+   "2": "Second time, it's me and Grandpa, talking through each part — the stuff that still gets to us, even now.",
+   "3": "Last one's yours. You write. Actual sentences, your own words — I want to know what you noticed, not what you're supposed to say."
+  }
+ },
+ "soloDialogue": {
+  "s1": [
+   {
+    "who": "w",
+    "text": "He's reading just to keep from thinking about something? At midnight, alone?"
+   },
+   {
+    "who": "p",
+    "text": "Exactly that. Weak and weary, the poem says — not enjoying the reading at all. He's using it to avoid something."
+   },
+   {
+    "who": "w",
+    "text": "And then something knocks, and he decides it's a visitor."
+   },
+   {
+    "who": "p",
+    "text": "He decides that. The poem never actually confirms it was a person at all."
+   }
+  ],
+  "s2": [
+   {
+    "who": "w",
+    "text": "So this whole poem is about someone he's lost — Lenore?"
+   },
+   {
+    "who": "p",
+    "text": "Lenore, yes. Gone, and the poem says the angels name her — as if even heaven agrees she's beyond him now."
+   },
+   {
+    "who": "w",
+    "text": "That's such a heavy way to start missing someone."
+   },
+   {
+    "who": "p",
+    "text": "Grief, dressed up as December and dying embers. Poe liked his settings to match the feeling exactly."
+   }
+  ],
+  "s3": [
+   {
+    "who": "w",
+    "text": "The curtains rustling scares him THAT much? It's just fabric."
+   },
+   {
+    "who": "p",
+    "text": "At midnight, alone, already afraid — yes. Watch how he talks himself into and out of fear in the same breath."
+   },
+   {
+    "who": "w",
+    "text": "He says it's nothing, then immediately checks again."
+   },
+   {
+    "who": "p",
+    "text": "That's fear for you. Logic doesn't actually help."
+   }
+  ],
+  "s4": [
+   {
+    "who": "w",
+    "text": "He opens the door and there's actually nobody there. That's so much worse than if there had been."
+   },
+   {
+    "who": "p",
+    "text": "Much worse. An empty doorway lets your imagination fill it with anything at all."
+   },
+   {
+    "who": "w",
+    "text": "He even whispers her name into the dark, doesn't he?"
+   },
+   {
+    "who": "p",
+    "text": "He does. And only the echo answers."
+   }
+  ],
+  "s5": [
+   {
+    "who": "w",
+    "text": "So the sound moves — first the door, now the window?"
+   },
+   {
+    "who": "p",
+    "text": "The window. Which means whatever it is, it's circling him, not just visiting once."
+   },
+   {
+    "who": "w",
+    "text": "That's genuinely unsettling."
+   },
+   {
+    "who": "p",
+    "text": "It's meant to be. Watch what finally comes through."
+   }
+  ],
+  "s6": [
+   {
+    "who": "w",
+    "text": "It just... walks in? Like it owns the place?"
+   },
+   {
+    "who": "p",
+    "text": "Unhurried, exactly. No fear of him at all — which is strange for a wild bird indoors with a person."
+   },
+   {
+    "who": "w",
+    "text": "And it perches on a bust of a Greek goddess. That's such a specific detail."
+   },
+   {
+    "who": "p",
+    "text": "Pallas — goddess of wisdom. The bird of ill omen sitting directly above wisdom itself. Poe placed that on purpose."
+   }
+  ],
+  "s7": [
+   {
+    "who": "w",
+    "text": "He asks its name as a joke, basically, and it actually answers?"
+   },
+   {
+    "who": "p",
+    "text": "One word. And he laughs at first, calls it a fine name for a bird that will fly off in the morning like every other visitor he's known."
+   },
+   {
+    "who": "w",
+    "text": "He doesn't expect it to stay."
+   },
+   {
+    "who": "p",
+    "text": "He very much does not. Watch how wrong that turns out to be."
+   }
+  ],
+  "s8": [
+   {
+    "who": "w",
+    "text": "It just repeats the same word no matter what he says now?"
+   },
+   {
+    "who": "p",
+    "text": "The only word it knows, and he's starting to realize that — but he still can't stop asking it things."
+   },
+   {
+    "who": "w",
+    "text": "Why keep asking if you already know the answer?"
+   },
+   {
+    "who": "p",
+    "text": "That's the exact question the poem wants you sitting with."
+   }
+  ],
+  "s9": [
+   {
+    "who": "w",
+    "text": "He pulls a chair up close to study it — he's not scared anymore?"
+   },
+   {
+    "who": "p",
+    "text": "Curious now, trying to reason it out. Watching the way people do when they're trying to talk themselves out of dread."
+   },
+   {
+    "who": "w",
+    "text": "But he's thinking about her again while he does it."
+   },
+   {
+    "who": "p",
+    "text": "He never really stopped. The bird's just given the grief somewhere to sit."
+   }
+  ],
+  "s10": [
+   {
+    "who": "w",
+    "text": "He's basically demanding the bird tell him if things will get better?"
+   },
+   {
+    "who": "p",
+    "text": "Begging, really — is there balm in Gilead, will he ever hold Lenore again — and the answer is the same both times."
+   },
+   {
+    "who": "w",
+    "text": "That's cruel, in a way. Just one word for everything."
+   },
+   {
+    "who": "p",
+    "text": "The bird never changes. He's the one who keeps asking different questions and expecting a different answer."
+   }
+  ],
+  "s11": [
+   {
+    "who": "w",
+    "text": "This is the question he actually cares about, isn't it — will he see her again."
+   },
+   {
+    "who": "p",
+    "text": "The only one that matters to him. And 'Nevermore' answers that one exactly the same as it answered whether the bird would leave."
+   },
+   {
+    "who": "w",
+    "text": "That has to be the worst possible answer to get."
+   },
+   {
+    "who": "p",
+    "text": "It's the one he was afraid of the whole time."
+   }
+  ],
+  "s12": [
+   {
+    "who": "w",
+    "text": "It never leaves. It's just... still there, at the end."
+   },
+   {
+    "who": "p",
+    "text": "Still there, and the poem says his soul, from that shadow, shall be lifted — nevermore. It's not a bird anymore by the last line. It's grief that doesn't go away."
+   },
+   {
+    "who": "w",
+    "text": "That's such a heavy way to end it."
+   },
+   {
+    "who": "p",
+    "text": "Poe wanted an ending that didn't resolve. Grief like that usually doesn't."
+   }
+  ],
+  "poe": [
+   {
+    "who": "w",
+    "text": "Nine dollars? That’s all he got paid for it?"
+   },
+   {
+    "who": "p",
+    "text": "About nine dollars for The Raven itself, and he was a household name within the month — and still died poor, four years later."
+   },
+   {
+    "who": "w",
+    "text": "That's so unfair."
+   },
+   {
+    "who": "p",
+    "text": "It is. He wrote some of the most famous lines in the language and never saw much of what they were worth."
+   }
+  ],
+  "impact": [
+   {
+    "who": "w",
+    "text": "There’s a football team named after this poem? Genuinely?"
+   },
+   {
+    "who": "p",
+    "text": "Baltimore's Ravens — named by public vote. Possibly the only major sports team on Earth named after a poem about grief."
+   },
+   {
+    "who": "w",
+    "text": "Poe would have hated that, probably."
+   },
+   {
+    "who": "p",
+    "text": "I suspect he'd have taken the money and said nothing."
+   }
+  ]
+ }
 }
