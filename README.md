@@ -15,7 +15,9 @@ pack/                 what the engine loads
   index.js            pack entry
   book.json           same book with data URIs stripped
   art/                139 WebP files, generated, not committed
-  AUDIO-NEEDED.md     178 recordings this repo does not have
+  audio/              recovered narration recordings
+  cues/raven.vtt      recovered word-level timings
+  AUDIO-RECOVERED.md  recovery provenance and validation history
 tools/fix-glossary.mjs
 tools/extract-media.mjs
 ```
@@ -57,15 +59,18 @@ and no warning. The extractor handles this now.
 The shipped HTML in `build/` is untouched, including the old gloss. It is the
 record of what went out, not something to patch.
 
-## Still needed
+## Remaining media and compatibility work
 
 1. Art extracted. 139 WebP in `pack/art/`.
 2. Pack ships.
-3. Recordings. There are none in this repo. No timings, so no word-by-word
-   highlight. `pack/AUDIO-NEEDED.md` lists 178 clips. The reading works silent.
+3. Narration was recovered and committed, with word-level timing data. See
+   [the recovery record](pack/AUDIO-RECOVERED.md); do not regenerate recordings
+   on the basis of the superseded missing-audio claim. Validate playback and
+   cue coverage against the engine version used for release.
 4. Vocabulary swaps and translations the engine now supports.
 5. A decision on 120 per-line plates. The old build changed picture every line.
-   The engine uses one picture per segment. Files are extracted and waiting.
+   The earlier engine used one picture per segment; the solo redesign supports
+   per-line storyboard media. Check its current contract before authoring more art.
 
 ## Licence
 
