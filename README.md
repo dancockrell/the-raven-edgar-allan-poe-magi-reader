@@ -1,5 +1,7 @@
 # The Raven — Magi Reader pack
 
+> **Product scope, 5 September 2026:** this repository preserves book content, media, and earlier reader/pack work. [Magi Reader](https://github.com/dancockrell/magi-reader-engine) now targets solo literary reading; retained questions, classroom interfaces, and old packaging instructions are historical compatibility material, not current product requirements. Validate actual assets against the engine branch you use; the historical notes below are not a fresh release certification.
+
 Poe, 1845. Eighteen stanzas in twelve segments. Picture and recording per
 segment, comprehension questions, a glossary of the words that stop a learner.
 
